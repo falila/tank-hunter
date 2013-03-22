@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Tank Hunter</title>
+<script  src=js/Debugger.js ></script>
+<script  src=js/factory-min-3.4.js ></script>
+<script type="text/javascript">
+
+window.addEventListener('load', eventWindowLoaded, false);	
+
+function eventWindowLoaded() {
+
+	canvasApp();
+	
+}
+
+function canvasApp(){
+
+	var theCanvas = document.getElementById('canvas');
+  	if (!theCanvas || !theCanvas.getContext) {
+    		return;
+  	}
+  
+  	var context = theCanvas.getContext('2d');
+ 	
+	if (!context) {
+   	 	return;
+  	}
+	
+	theCanvas = document.getElementById("canvas");
+	context = theCanvas.getContext("2d"); 
+	
+
+	function drawScreen() {
+	
+	Debug.log("drawing canvas");
+	
+	// background and 
+	context.fillStyle="#ffffaa";
+	context.fillRect(0,0,400,400);
+	
+	//Text renderer
+	context.fillStyle= "#000000";
+	context.font = "20px_sans";
+	context.textBaseline = "top";
+	context.fillText("WELCOME TO TANK HUNTER GAME !",120,60);
+	
+
+	
+	context.strokeStyle = "#000000";
+	context.strokeRect(5,5,390,390);
+	}
+         drawScreen(); 
+}
+
+
+</script> 
+
+</head>
+<body>
+<div style="position: absolute; top: 50px; left: 50px;">
+<canvas id="canvas" width="400" height="400">
+ Your browser does not support the HTML 5 Canvas. 
+ Votre navigateur ne prend pas en charge HTML5 Canvas.
+</canvas>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
