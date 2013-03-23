@@ -14,7 +14,7 @@ function Bomb(){
 	
 	// fait exploser la bomb
 	function bombExplosed(){} 
-	//neutralise la bomb elle est retirer de la liste des bomb et supp sur le screen
+	//neutralise la bomb 
 	function neutraliseBomb(){}
 	
 	}
