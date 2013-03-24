@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>Tank Hunter</title>
 <script  src=js/Debugger.js ></script>
-<script  src=js/factory-min-3.4.js ></script>
 <script type="text/javascript">
 
 window.addEventListener('load', eventWindowLoaded, false);	
@@ -45,11 +44,29 @@ function canvasApp(){
 	context.font = "20px_sans";
 	context.textBaseline = "top";
 	context.fillText("WELCOME TO TANK HUNTER GAME !",120,60);
+	
+
+	
+<<<<<<< HEAD
+	Debug.log("drawing canvas");
+	
+	// background and 
+	context.fillStyle="#ffffaa";
+	context.fillRect(0,0,400,400);
+	
+	//Text renderer
+	context.fillStyle= "#000000";
+	context.font = "20px_sans";
+	context.textBaseline = "top";
+	context.fillText("WELCOME TO TANK HUNTER GAME !",120,60);
 	context.fillText("This Game run with HTML5 Canvas .",120,100);
 	
 
 	
 	context.strokeStyle = "#000000";
+=======
+	context.strokeStyle = "#000000";
+>>>>>>> 556784427b2d9fb55000c60c8d1467b769fdeb4e
 	context.strokeRect(5,5,390,390);
 	}
          drawScreen(); 
