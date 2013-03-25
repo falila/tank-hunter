@@ -25,6 +25,29 @@ var GAME_STATE_PLAYER_DIE;
 const GAME_STATE_TITLE=0;
 var GAME_STATE_NEW_GAME=3;
 
+// Game environnement variables
+var score=0;
+var level=1;
+var player=3;
+var titleStarted=false;
+var gameOverStarted=false;
+
+// Score variables 
+var tankscore=250;
+var bombScore=100;
+
+// variables logical 
+ Player player=null;
+ var tanks=[];
+ var playerMissiles=[];
+ var tankMissiles=[];
+ var bombs=[];
+ 
+ // level specific variables
+ var levelTankOccurence=15 ;
+ var levelTankSpeed=1;
+ var levelTankMissileSpeed=1;
+ var levelTankSpeedAdjust=1;
 
 // all methods game state / les functions sur l'etat du jeu 
 
@@ -43,7 +66,7 @@ function checkForEndOFLevel(){};
 function fillBackground();
 function setTextStyle();
 function renderScoreBoard();
-function checkeysPress();
+function checkkeysPress();
 function update (){
 	// appel tous les updates funct 
 	}
@@ -52,5 +75,20 @@ function updatePlayerMissiles();
 function updateTankMissiles();
 function updateTank();
 function updateBomb();
-function upadteBase();
+function updateBase();
 
+// function d'affichage
+function render(){} 
+function renderPlayer(){}
+function renderPlayerMissile(){};
+function renderTank(){};
+function renderBomb(){};
+function renderTankMissile();
+function renderPlayerBomb(){};
+function checkCollisions(){}
+function firePlayerMissile(){}
+function fireTankMissile(){}
+function playerDie(){}
+function createExplode(){}
+function boundingBoxCollide(){}
+function addToScore(){}

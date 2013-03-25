@@ -6,29 +6,28 @@
 
 // Define player attributes
 
-var width;   // longeur
-var height;  // largeur
-var velocityX; // vitesse sur l'axe X
-var velocityY; // vitesse sur l'axe Y
-var speed ;  // facteur de vitesse 
-var nblifes;   // la duree de vie  
-var jogeDegat;  // indicateur du nombre de degats subit 
-var captprox;  // capteur de proximité pour reperer les enimies et les mines enemies 
-var missilesDelay; // delai entre chaque coup canon . 
-var supPowerMin ; // permet d'indique le niveau de son super pouvoir. 
-var supPowerMax ; 
-var accelerationMax; 
-var x; // position courante sur l'axe X 
-var y; // position courante sur l'axe Y
 
-function Player(x,y,width,height,velocityX,velocityY){
+
+function Player(){
 	
-	this.x=x;
-	this.y=y;
-	this.width=width;
-	this.height=height;
+	
+	this.width=20;
+	this.height=20;
+	this.halfwidth=10 ;
+	this.halfheight=10;
+	this.move=false;
+	this.rotatationVelocity=1;
+	this.maxVelocity=5;
+	this.x=0;
+	this.y=0;
+	this.moveAcceleration=.05;
+	this.supPowerMin=0;
+	this.supPowerMax=5;
+	this.missilesDelay=5;
 	this.velocityX=velocityX;
-	this.velocityY=velocityY;	
+	this.velocityY=velocityY;
+//this.jogeDegatMin=0; 
+	//this.jogeDegatMax=2 ;
 	
 	// met la position du jour à jour
 	function playerUpdate(x,y){}

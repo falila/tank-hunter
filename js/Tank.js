@@ -21,12 +21,15 @@
 //var x=; // position courante sur l'axe X 
 //var y=; // position courante sur l'axe Y
 
-function Tank(x,y,width,height){
+function Tank(){
 	
 	this.x=x;
 	this.y=y;
-	this.width=width;
-	this.height=height;
+	this.width=20;
+	this.height=20;
+	this.halfwidth=10;
+	this.halfheight=10;
+	
 		
 	// met la position du jour à jour
 	function tankUpdate(x,y){}
