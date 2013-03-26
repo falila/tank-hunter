@@ -9,4 +9,4 @@ Tout Public .
 Comment installer 
 ...
 licence:
-Creative commons NY NC SA
+Cc BY NC SA
